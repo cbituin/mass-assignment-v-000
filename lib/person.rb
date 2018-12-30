@@ -4,7 +4,7 @@ class Person
 
   def initialize(propertie)
     properties.each { |key, value|
-      self.send(({key=}), value)
+      self.send(({"#key="}), value)
     }
   end
 
